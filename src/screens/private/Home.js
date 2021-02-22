@@ -120,10 +120,6 @@ const Home = (props) => {
         backgroundColor: '#fff',
         width: 320,
       }}
-      drawerContentOptions={{
-        activeTintColor: '#e91e63',
-        itemStyle: { marginVertical: 100 },
-      }}
     >
       {/** Agregamos cada item del Drawer */}
       <Drawer.Screen name='InicioUser' component={Inicio} />
