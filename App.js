@@ -4,6 +4,7 @@
  * npm install @react-navigation/drawer
  * npm i @react-navigation/core
  * npm install @react-navigation/bottom-tabs
+ * npm install firebase
  *
  * COLORES
  * ##55d0f4

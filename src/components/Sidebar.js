@@ -1,7 +1,7 @@
 import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import React from 'react';
 import { ImageBackground, Text, View } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, FontAwesome } from '@expo/vector-icons';
 import formStyle from './../styles/styles.forms';
 const Sidebar = (props) => {
   return (
@@ -33,6 +33,13 @@ const Sidebar = (props) => {
         </View>
       </ImageBackground>
       <DrawerContentScrollView {...props}>
+        <DrawerItem
+          icon={() => <AntDesign name='exception1' size={20} color='black' />}
+          label='Practica 3'
+          onPress={() => {
+            props.navigation.navigate('Practica3');
+          }}
+        />
         <DrawerItem
           icon={() => <AntDesign name='home' size={20} color='#000' />}
           label='Inicio'
